@@ -100,6 +100,7 @@ function App() {
     setResult(String(arraySome));
   };
 
+  // every의 경우 각 요소가 모두 2글자 이상의 길이를 가진 경우 true를 반환하도록 구현
   const handleEvery = function () {
     const lengthCheck = (item) => item.length >= 2;
     const arrayEvery = array.every(lengthCheck);
